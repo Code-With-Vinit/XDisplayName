@@ -23,6 +23,12 @@ function App() {
 
   const handleSubmit=(e)=>{
     e.preventDefault();
+
+    if (!firstName.trim() || !lastName.trim()) {
+    setShowMessage(false);
+    return;
+  }
+
     setShowMessage(true);
   }
 
