@@ -43,7 +43,7 @@ function App() {
           onChange={(e) => handlelastName(e)}
         />
       </label>
-       <button style={{display:"block"}}>Submit</button>
+       <button type="submit" style={{display:"block"}}>Submit</button>
     </form>
    
     <p>{showMessage &&  `Full Name: ${firstName} ${lastName}`}</p>
