@@ -1,10 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
 
   const [firstName,setfirstName]=useState("");
   const [lastName,setlastName]=useState("");
   const [showMessage,setShowMessage]=useState(false);
+
+  useEffect(() => {
+    setfirstName(firstName);
+    setlastName(lastName);
+  },[]);
 
 
   const handlefirstName=(e)=>{
