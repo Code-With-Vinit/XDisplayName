@@ -6,10 +6,10 @@ function App() {
   const [lastName,setlastName]=useState("");
   const [showMessage,setShowMessage]=useState(false);
 
-  useEffect(() => {
-    setfirstName(firstName);
-    setlastName(lastName);
-  },[]);
+  // useEffect(() => {
+  //   setfirstName(firstName);
+  //   setlastName(lastName);
+  // },[]);
 
 
   const handlefirstName=(e)=>{
@@ -56,7 +56,7 @@ function App() {
       </label>
        <button type="submit" style={{display:"block"}}>Submit</button>
     </form>
-    {showMessage &&  `Full Name: ${firstName} ${lastName}`}
+      {showMessage &&  `Full Name: ${firstName} ${lastName}`}
     </>
   )
 }
