@@ -56,7 +56,7 @@ function App() {
       </label>
        <button type="submit" style={{display:"block"}}>Submit</button>
     </form>
-      <p>{showMessage &&  `Full Name: ${firstName} ${lastName}`}</p>
+      {showMessage &&  (<p>Full Name: {firstName} {lastName}</p>)}
     </>
   )
 }
